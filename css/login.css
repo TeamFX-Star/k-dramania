@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000000;
+  /* Fondo negro */
+  color: #FFFFFF;
+  /* Texto blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #272639;
+  /* Gris oscuro */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #FFFFFF;
+  /* Texto blanco */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: #FFBD59;
+  /* Amarillo */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#login-button, #signup-button {
+  padding: 10px;
+  background-color: #FFBD59;
+  /* Amarillo */
+  color: #FFFFFF;
+  /* Texto blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#signup-button:hover {
+  background-color: #F6F6F6;
+  /* Blanco */
+  color: #272639;
+  /* Gris oscuro */
+}
+
+#login-button:hover {
+  background-color: #F6F6F6;
+  /* Blanco */
+  color: #272639;
+  /* Gris oscuro */
+}
+
+a {
+  text-decoration: none;
+  color: #FFBD59;
+  /* Amarillo */
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #F6F6F6;
+  /* Blanco */
+}
+
+p {
+  text-align: center;
+  margin: 8px;
+}
+
+.input__item {
+  width: 100%;
+}
+
+.input__item label {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.input__item input[type="password"],
+.input__item input[type="email"],
+.input__item input[type="text"] {
+  width: 100%;
+  padding-right: 40px; /* Espacio para el botón */
+  padding-left: 10px; /* Ajusta el padding izquierdo */
+  padding-top: 10px; /* Ajusta el padding superior */
+  padding-bottom: 10px; /* Ajusta el padding inferior */
+  box-sizing: border-box;
+  border: 1px solid #444; /* Ajusta según el estilo deseado */
+  border-radius: 5px;
+  background: #50505a;
+  color: #fff;
+}
+
+.showPass {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 11px;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  border:0;
+  line-height: 1;
+  margin-right: 10px;
+  cursor: pointer;
+  color: dodgerblue;
+  &:focus {
+    outline: none;
+  }
+}

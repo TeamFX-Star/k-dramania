@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*user-select: none;*/
+
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content .main {
+    flex: 1;
+    padding: 20px;
+    max-width: 620px;
+    box-sizing: border-box;
+}
+
+[class^="post-title-"] {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+[class^="post-content-"] {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+[class^="post-meta-"] {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.post-meta span {
+    margin-right: 10px;
+}
+
+.social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    margin-left: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar {
+    width: 300px;
+    margin-left: 20px;
+}
+
+[class^="sidebar-title-"] {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar-content {
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.sidebar-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-content li {
+    margin-bottom: 5px;
+}
+
+.sidebar-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: sidebar-counter; /* reinicia el contador */
+}
+
+.sidebar-content li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-content li img {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-right: 10px;
+}
+
+.sidebar-content li a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.5;
+}
+
+.sidebar-content li:before {
+    content: counter(sidebar-counter);
+    counter-increment: sidebar-counter;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.featured-image {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}

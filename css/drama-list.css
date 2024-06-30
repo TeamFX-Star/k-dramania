@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*user-select: none;*/
+
+    background-color: #f8f9fa;
+}
+
+/* Contenedor principal que ocupa todo el ancho disponible */
+main {
+    width: 100%;
+    padding: 0 20px;
+    /* Espacio lateral para que no se pegue a los bordes */
+    box-sizing: border-box;
+}
+
+/* Lista de dramas usando CSS Grid */
+.drama-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Ajusta las columnas automáticamente */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    width: 100%;
+    margin-top: 20px;
+    /* Espacio superior */
+}
+
+/* Cada tarjeta de drama */
+.drama {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    flex-direction: column;
+    justify-content: space-between; /* Alinear contenido dentro de la tarjeta */
+    height: 100%; /* Ocupar toda la altura disponible */
+}
+
+/* Calificación dentro de cada tarjeta de drama */
+.drama .rating {
+    margin-top: auto; /* Coloca la calificación siempre al final */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Efecto de aumento al pasar el cursor sobre las tarjetas */
+.drama:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+}
+
+/* Imagen dentro de cada tarjeta de drama */
+.drama img {
+    width: 150px;
+    /* Ancho fijo */
+    height: 200px;
+    /* Alto fijo */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    pointer-events: none;
+    /* Evita que se capturen eventos de puntero */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el área sin deformarse */
+}
+
+/* Título dentro de cada tarjeta de drama */
+.drama h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Descripción dentro de cada tarjeta de drama */
+.drama p {
+    color: #666;
+    font-size: 14px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ajusta el contenido a lo largo del eje principal */
+    max-height: 90vh; /* Limita la altura máxima del modal al 90% del viewport height */
+    overflow-y: auto; /* Añade scroll vertical si es necesario */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-video {
+    margin-bottom: 20px;
+}
+
+.modal-video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
+.modal-info {
+    margin-bottom: 20px;
+}
+
+.modal-info p,
+.modal-info ul {
+    margin: 10px 0;
+}
+
+.modal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-info ul li {
+    margin-bottom: 5px;
+}
+
+.modal-comments {
+    margin-bottom: 20px;
+}
+
+.modal-comments h3 {
+    margin-top: 0;
+}
+
+.modal-comments .comments-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-input {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.username-initial {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.username-initial p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.modal-comments textarea {
+    border: none;
+    resize: none;
+    flex: 1;
+    padding: 10px;
+}
+
+.modal-comments textarea:focus {
+    outline: none;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-username {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.comment-text {
+    margin-bottom: 10px;
+}
+
+.like-btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.like-btn i {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.like-btn span {
+    font-size: 14px;
+}
+
+.modal-comments button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-comments button:hover {
+    background-color: #218838;
+}
+
+/* Alinear el botón Add Comment a la derecha */
+.comment-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-input textarea {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre el textarea y el botón */
+}

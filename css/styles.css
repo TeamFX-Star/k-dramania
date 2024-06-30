@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos generales */
+.icon-container, .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.material-icons {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+    margin-right: 20px; /* Espacio entre el ícono y el siguiente elemento */
+}
+
+/* Estilos de la lista de dramas */
+.drama-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrar la lista de dramas */
+    max-width: 1200px; /* Ancho máximo para mejor diseño */
+    margin: 20px auto; /* Centrar la lista y agregar espacio superior */
+}
+
+/* Estilos para cada carta de drama */
+.drama {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 250px; /* Permitir flexibilidad en el tamaño */
+    max-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior entre dramas */
+}
+
+/* Imagen dentro de cada tarjeta de drama */
+.drama img {
+    width: 150px;
+    /* Ancho fijo */
+    height: 200px;
+    /* Alto fijo */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    pointer-events: none;
+    /* Evita que se capturen eventos de puntero */
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el área sin deformarse */
+}
+
+/* Estilos para el título en las cartas */
+.drama h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Estilos para la descripción en las cartas */
+.drama p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* Calificación dentro de cada tarjeta de drama */
+.rating {
+    margin-top: auto; /* Coloca la calificación siempre al final */
+    font-weight: bold;
+    color: #333;
+    order: 1; /* Ajusta el orden para que esté al final */
+}
+
+
+/* Estilos de la sección de descubrimiento */
+.discover {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discover h1 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.discover .actions {
+    margin-top: 20px;
+}
+
+.discover .actions a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.discover .actions .browse {
+    background-color: orange;
+    color: white;
+}
+
+.discover .actions .search {
+    background-color: yellow;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .drama-list {
+        justify-content: center; /* Centrar en dispositivos móviles */
+    }
+
+    .drama {
+        width: 100%; /* Ocupar el ancho completo en móviles */
+        max-width: none; /* Eliminar el ancho máximo en móviles */
+    }
+}
+
+@media (max-width: 768px) {
+    .discover, .drama-list {
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .drama {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

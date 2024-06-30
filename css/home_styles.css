@@ -1,0 +1,399 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+    margin-right: 20px; /* Space between the logo and the language selector */
+}
+
+.icon-container, .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 5%;
+    margin-right: 15px;
+}
+
+.material-icons {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+    margin-right: 20px; /* Space between the logo and the language selector */
+}
+
+.user-avatar {
+    width: 15%;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav#nav-links a {
+    margin-right: 15px; /* Adjust as needed */
+}
+
+.language-selector select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+nav .sign-in,
+nav .sign-up,
+.closeSession {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff9900;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav .sign-up {
+    background-color: #ffcc00;
+}
+
+nav .sign-in:hover,
+nav .sign-up:hover {
+    background-color: #e68a00; /* Background color on hover */
+}
+
+/* Links styles */
+a.browse,
+a.search {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+a.search {
+    background-color: #ffcc00;
+}
+
+a.browse:hover,
+a.search:hover {
+    background-color: #e68a00; /* Background color on hover */
+}
+
+/* User dropdown styles */
+
+/* User dropdown styles */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center; /* Alineación central del bloque */
+}
+
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar para centrar */
+}
+
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.user-dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-dropdown .user-avatar {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.discover {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.discover h1 {
+    color: #ff9900;
+    margin-bottom: 10px;
+    font-size: 36px;
+    margin-left: 0; /* Align with buttons */
+}
+
+.discover p {
+    font-size: 18px;
+    margin-left: 0; /* Align with buttons */
+}
+
+.actions {
+    margin: 20px 0;
+    margin-left: 0; /* Align with discover texts */
+}
+
+/* Drama list styles */
+.drama-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-end; /* Align drama list to the right */
+    flex: 1; /* Adjust to occupy remaining space */
+    max-width: 1200px; /* Adjust max width for better layout */
+    margin-top: 20px; /* Top space */
+}
+
+.drama {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(25% - 20px); /* 4 columns per row */
+    max-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Bottom space between dramas */
+}
+
+.drama img {
+    width: 150px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Adjust image to cover area without distortion */
+}
+
+.drama h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+.drama p {
+    color: #666;
+    font-size: 14px;
+}
+
+.rating {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hide modal by default */
+    position: fixed; /* Fixed position to cover entire screen */
+    z-index: 1000; /* High z-index to be above content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    overflow: auto; /* Scroll if content is larger than screen */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Close button styles */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Login form styles */
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-form label {
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#login-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Signup modal styles */
+#signup-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+#signup-modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#signup-modal .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+#signup-modal .close:hover,
+#signup-modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#signup-modal #signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-modal #signup-form label {
+    margin-bottom: 5px;
+}
+
+#signup-modal #signup-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#signup-modal #signup-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#signup-modal #signup-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Password container styles */
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 30px; /* Additional space for icon */
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
