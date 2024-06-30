@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Dramania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image">
+            <div id="logoId" class="logo">K-Dramania</div>
+            
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar">
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <nav class="desktop-menu">
+            <a id="dramas-link" href="k_dramas.html">Dramas</a>
+            <a id="news-link" href="news.html">News</a>
+            <a id="actors-link" href="#">Actors</a>
+            <a id="reviews-link" href="#">Reviews</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+    
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a href="k_dramas.html">Dramas</a>
+                <a href="news.html">Noticias</a>
+                <a href="#">Actores</a>
+                <a href="#">Opiniones</a>
+            </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <main>
+        <section class="discover">
+            <h1>Descubre los Mejores K-Dramas</h1>
+            <p>Explora nuestra colección curada de los K-Dramas más populares y candentes. Encuentra información detallada, reseñas y más.</p>
+            <div class="actions">
+                <a href="k_dramas.html" class="browse">Ver Dramas</a>
+                <a href="k_dramas.html" class="search">Buscar</a>
+            </div>
+        </section>
+        <section class="drama-list">
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/89/d9/e2/89d9e207e612a441b5085c7d7d4afad1.jpg" alt="Crash Landing on You">
+                <h2>Crash Landing on You</h2>
+                <p id="drama1-description">Una mujer surcoreana se lanza accidentalmente en parapente hacia Corea del Norte y se enamora de un oficial norcoreano.</p>
+                <div class="rating">⭐ 4.9 (12,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/59/ff/e8/59ffe82087dcbd004dc9d0f1d6dffd19.jpg" alt="Vincenzo">
+                <h2>Vincenzo</h2>
+                <p id="drama2-description">Un abogado ítalo-coreano y consigliere de la mafia regresa a Corea y se involucra en una batalla legal.</p>
+                <div class="rating">⭐ 4.7 (9,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/01/4e/7d/014e7d9afecaf31fcbb51df3816652e7.jpg" alt="Itaewon Class">
+                <h2>Itaewon Class</h2>
+                <p id="drama3-description">Un joven abre un restaurante en Itaewon y busca venganza contra una familia poderosa.</p>
+                <div class="rating">⭐ 4.8 (11,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://via.placeholder.com/150" alt="Squid Game">
+                <h2>Squid Game</h2>
+                <p id="drama4-description">Cientos de jugadores con problemas económicos aceptan una extraña invitación para competir en juegos infantiles. Adentro, un tentador premio los espera, con altas apuestas mortales.</p>
+                <div class="rating">⭐ 4.9 (15,678 reviews)</div>
+            </div>
+            <!-- Nuevo K-Drama agregado -->
+            <div class="drama">
+                <img src="https://via.placeholder.com/150" alt="Another K-Drama">
+                <h2>Another K-Drama</h2>
+                <p id="drama5-description">Short description of the new K-Drama.</p>
+                <div class="rating">⭐ Rating (Number of reviews)</div>
+            </div>
+            <!-- Segundo nuevo K-Drama agregado -->
+            <div class="drama">
+                <img src="https://via.placeholder.com/150" alt="New K-Drama">
+                <h2>New K-Drama</h2>
+                <p id="drama6-description">Short description of the new K-Drama.</p>
+                <div class="rating">⭐ Rating (Number of reviews)</div>
+            </div>
+            <!-- Tercer nuevo K-Drama agregado -->
+            <div class="drama">
+                <img src="https://via.placeholder.com/150" alt="New K-Drama">
+                <h2>New K-Drama</h2>
+                <p id="drama7-description">Short description of the new K-Drama.</p>
+                <div class="rating">⭐ Rating (Number of reviews)</div>
+            </div>
+            <!-- Cuarto nuevo K-Drama agregado -->
+            <div class="drama">
+                <img src="https://via.placeholder.com/150" alt="New K-Drama">
+                <h2>New K-Drama</u>
+                <p id="drama8-description">Short description of the new K-Drama.</p>
+                <div class="rating">⭐ Rating (Number of reviews)</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/session_logic.js"></script>
+    <script src="js/translate_home.js"></script>
+</body>
+
+</html>

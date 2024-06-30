@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de K-dramas</title>
+    <link rel="stylesheet" href="css/news-pague.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image">
+            <div id="logoId" class="logo">K-Dramania</div>
+            
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar">
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <nav class="desktop-menu">
+            <a id="home-link" href="home.html">Dramas</a>
+            <a id="news-link" href="news.html">News</a>
+            <a id="actors-link" href="#">Actors</a>
+            <a id="reviews-link" href="#">Reviews</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+    
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a href="k_dramas.html">Dramas</a>
+                <a href="news.html">Noticias</a>
+                <a href="#">Actores</a>
+                <a href="#">Opiniones</a>
+            </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+
+        <div class="container">
+            <div class="main-content">
+                <div class="main">
+                <div class="post">
+                    <h1 class="post-title-1">Ranking de K-dramas: Jerarquía y otras series para ver este fin de semana</h1>
+
+                    <div class="post-date">
+                        <span class="post-meta-1">Por Luz Gonzalez</span>
+                        <span class="post-meta-2">22 Jun, 2024 01:46 p.m. MX</span>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <p class="post-content-1">Jerarquía se encuentra en emisión y es una de las series más vistas en Netflix Corea del Sur (Netflix)</p>
+                    <p class="post-content-2">El ranking de los K-dramas favoritos en Netflix Corea del Sur ha sido actualizado, presentando algunas novedades. Si bien los dramas coreanos se destacan por su calidad de producción, historias cautivadoras y personajes con gran profundidad emocional que enfrentan dilemas complejos, la lista más reciente ha ampliado su espectro más allá de lo habitual.</p>
+                </div>
+
+                <div class="post">
+                    <p class="post-content-3">A la selección se han sumado un anime basado en un manga japonés. Esta incorporación han sido reconocidas por su excelente calidad y por haber captado el interés del público, a pesar de tratarse de una animación.</p>
+                </div>
+
+                <div class="post">
+                    <h2 class="post-title-2">Top 10 de K-dramas</h2>
+                    <p class="post-title-3">1.- Jerarquía</p>
+                    <p class="post-content-4">El 0.01% de los alumnos de la escuela Jooshin tiene el control de todo, pero un nuevo estudiante de intercambio bastante reservado logra abrir una grieta en ese mundo insondable.</p>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/ZnOqXef19T0zYEi1A4FVu7Lzo6U=/992x1488/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/36RLG27TANHBZBTBZL4D2PGEMY.jpg" alt="Jerarquía">
+                    <p class="post-meta-3">El 0.01% superior de los estudiantes controla la ley y el orden en la Escuela Secundaria Jooshin, pero un estudiante de traslado secreto agrieta su mundo indomable. (Netflix)</p>
+                </div>
+
+                <div class="post">
+                    <p class="post-title-4">2.- Demon Slayer: Kimetsu no Yaiba (Guardianes de la noche)</p>
+                    <p class="post-content-5">Este anime está basado en el periodo Taisho en Japón. Tanjiro, un chico de buen corazón que vende carbón para vivir, descubre que su familia fue masacrada por un demonio. Para empeorar las cosas, su hermana menor Nezuko, la única sobreviviente, ha sido transformada en un demonio. Aunque devastado por esta cruda realidad, Tanjiro se compromete a convertirse en un 'cazador de demonios' para poder devolverle la forma humana a su hermana y matar al demonio que masacró a su familia.</p>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/J5mcUuR-dpk3RAHMLNXv8DhTgUo=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/3JDXQCJT2BEK5HZ6OBW2J3J3RQ.jpg" alt="Demon Slayer: Kimetsu no Yaiba">
+                    <p class="post-meta-4">Demon Slayer: Kimetsu no Yaiba-To the Hashira Training Arc. (Créditos: Crunchyroll)</p>
+                </div>
+
+                <div class="post">
+                    <p class="post-title-5">3.- Una familia atípica</p>
+                    <p class="post-content-6">Alguna vez tuvieron superpoderes únicos, pero la vida moderna hizo que perdieran sus habilidades... hasta que una mujer misteriosa lo cambia todo.</p>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/ru9zoAcawYsLKQoCcS6Kae4K1yg=/992x744/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/GMQ223UAYZCX5PXIHPSH3BDDTE.JPG" alt="Una familia atípica">
+                    <p class="post-meta-5">"Una familia atipica" tiene una duración aproximada de 70 minutos por capítulo. (Crédito: Netflix)</p>
+                </div>
+
+                <div class="post">
+                    <p class="post-title-6">4.- The 8 Show</p>
+                    <p class="post-content-7">Ocho personas atrapadas en un misterioso edificio de ocho pisos participan en un juego tentador pero peligroso en el que ganan dinero conforme pasa el tiempo.</p>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/2QCRCWj0MXJllDgYj8MflTjIChc=/992x661/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/WHURGRVMBFHFDFV4Y6Q6SG5454.JPG" alt="The 8 Show">
+                    <p class="post-meta-6">El juego en The 8 Show termina cuando un participante muere, intensificando el suspenso. (Crédito. Netflix)</p>
+                    </div>
+                    
+                    <div class="post">
+                        <p class="post-title-7">5.- Padres adolescentes</p>
+                        <p class="post-content-8">A una edad temprana, se tropezaron en el mundo de la crianza. Además de sus tareas cotidianas, enfrentan obstáculos y el estigma de ser padres adolescentes.</p>
+                    </div>
+        
+                    <div class="post">
+                        <p class="post-title-8">6.- El mejor béisbol</p>
+                        <p class="post-content-9">Jugadores de béisbol aficionados se enfrentan a profesionales del deporte en un campeonato para determinar qué equipo es el ganador absoluto.</p>
+                        <img class="featured-image" src="https://www.infobae.com/new-resizer/YJI3il4Wa8QEt2KSe7RAUxzr54s=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/NBHL2RVNLZE3VDLTDYRYGHKDPU.jpg" alt="El mejor béisbol">
+                        <p class="post-meta-7">A una edad temprana, se tropezaron en el mundo de la crianza. Además de sus tareas cotidianas, enfrentan obstáculos y el estigma de ser padres adolescentes.</p>
+
+                    </div>
+        
+                    <div class="post">
+                        <p class="post-title-9">7.- Kaiju No. 8</p>
+                        <p class="post-content-10">En un mundo plagado de criaturas conocidas como Kaiju, Kafka Hibino aspiraba a alistarse en la Fuerza de Defensa. Hace una promesa ir con su amiga de la infancia, Mina Ashiro, pero pronto, la vida los lleva por caminos separados. Mientras trabaja limpiando después de las batallas de Kaiju, Kafka conoce a Reno Ichikawa. La determinación de Reno de unirse a la Fuerza de Defensa reaviva la promesa de Kafka de unirse con Mina y proteger a la humanidad.</p>
+                        <img class="featured-image" src="https://www.infobae.com/new-resizer/nTx-lTfrtXKhcGOLxM84g2ipaqs=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/VIOGXBZPNBELRPLZZ2Y3WMPLWI.jpg" alt="Kaiju No. 8">
+                        <p class="post-meta-8">Kaiju No. 8- JAKDF 3rd Division Naoya Matsumoto/SHUEISHA</p>
+                    </div>
+                    
+                    <div class="post">
+                        <p class="post-title-10">8.- Amor después del divorcio</p>
+                        <p class="post-content-11">Tras volver a la soltería, este grupo de divorciados y divorciadas se prepara para conseguir sus citas, convivir con otras personas y encontrar de nuevo el amor.</p>
+                        <img class="featured-image" src="https://www.infobae.com/new-resizer/H4HsHaieZcM72RoyDAwB-WRZoAs=/992x1488/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/N4Y2VMCDSBBEFG53H3MXQIMUGY.jpg" alt="Love after Divorce">
+                        <p class="post-meta-9">Un grupo de divorciados se reúne para encontrar a su próxima pareja. (Netflix)</p>
+                    </div>
+
+                    <div class="post">
+                        <p class="post-title-11">9.- La reina de las lágrimas</p>
+                        <p class="post-content-12">La ‘reina de las tiendas departamentales’ y su esposo —que proviene de un pueblo pequeño— transitan una crisis conyugal hasta que, de repente, el amor comienza a florecer otra vez...</p>
+                        <img class="featured-image" src="https://www.infobae.com/new-resizer/9gp4xvPu6RF3WHOhs6eTYzTOAnM=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/COAEGXXB5BCYZCKVCW56C33QEU.jpg">
+                        <p class="post-meta-10">Kim Soo-hyun regresa a la actuación tras cuatro años, con el k-drama "La reina de las lágrimas". (Créditos: Netflix)</p>
+                    </div>
+
+                    <div class="post">
+                        <p class="post-title-12">10.- Hablando con franqueza</p>
+                        <p class="post-content-13">Un comentarista respetado pierde de pronto la capacidad de filtrar sus palabras al aire y atrae la atención de una guionista de televisión que lo invita a su programa de variedad.</p>
+                        <img class="featured-image" src="https://www.infobae.com/new-resizer/acxy6RiUdJhKcNzEVrC9OOabm2k=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/ZJVD3IBYD5FX7OH2PK6G4RNETU.jpg">
+                        <p class="post-meta-11">Esta serie de comedia se ha ganado la atención de los usuarios. (Netflix)</p>
+                    </div>
+
+                    <p class="post-title-13">Los K-dramas se posicionan en el epicentro de la popularidad global</p>
+                    <p class="post-content-14">En los últimos tiempos, estas series coreanas han capturado el interés de una audiencia internacional gracias a su alta calidad en producción. Un claro ejemplo de este fenómeno es “El Juego del Calamar”, producción de Netflix, que logró cautivar a millones de espectadores alrededor del mundo y se erigió como un referente del potencial de entretenimiento de los K-dramas.</p>
+                    <p class="post-content-15">Las plataformas de streaming han jugado un papel crucial en este auge, brindando acceso a estos dramas coreanos en cualquier momento y lugar, eliminando barreras lingüísticas y de calidad visual, y permitiendo a los usuarios disfrutar de maratones de sus series favoritas con facilidad.</p>
+                    <p class="post-content-16">Cabe destacar que, aunque este listado refleja las preferencias en Corea del Sur, algunos de los títulos mencionados podrían no estar disponibles en todas las regiones, dada la variabilidad de los catálogos de streaming según el país.</p>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-1">Lo Último</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li><a class="sidebar-name-1" href="#">6 nuevos K-Dramas para ver en junio de 2024</a></li>
+                            <li><a class="sidebar-name-2" href="#">K-Dramas que esperamos en junio de 2024</a></li>
+                            <li><a class="sidebar-name-3" href="#">Todos los doramas que se estrenan en junio de 2024</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-2">Te Recomendamos</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li>
+                                <img src="https://1.vikiplatform.com/c/40512c/1a23e80a73.jpg?x=b&s=1600x900&e=t&q=g" alt="Imagen 1">
+                                <a class="sidebar-name-4" href="#">El Jugador 2: Maestro de los estafadores</a>
+                            </li>
+                            <li>
+                                <img src="https://finde.latercera.com/wp-content/uploads/2024/03/La-reina-de-las-la%CC%81grimas-11.jpeg" alt="Imagen 2">
+                                <a class="sidebar-name-5" href="#">La reina de las lágrimas</a>
+                            </li>
+                            <li>
+                                <img src="https://1.vikiplatform.com/c/40438c/402ce72764.jpg?x=b&s=960x540&e=t&q=g" alt="Imagen 3">
+                                <a class="sidebar-name-6" href="#">Mi dulce mafioso</a>
+                            </li>
+                            <li>
+                                <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2024/06/23/667849710bb03c21cd6f41d0.webp" alt="Imagen 4">
+                                <a class="sidebar-name-7" href="#">Señorita noche y día</a>
+                            </li>
+                            <li>
+                                <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2024/06/23/667849710bb03c21cd6f41d0.webp" alt="Imagen 4">
+                                <a class="sidebar-name-8" href="#">Señorita noche y día</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-3">Te puede interesar:</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li><a class="sidebar-name-9" href="#">The Player 2: Maestro de los estafadores</a></li>
+                            <li><a class="sidebar-name-10" href="#">Jerarquía</a></li>
+                            <li><a class="sidebar-name-11" href="#">Mi dulce mafioso</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/session_logic.js"></script>
+<script src="js/mobile_menu.js"></script>
+<script src="js/translate_news_pague.js"></script>
+</body>
+</html>

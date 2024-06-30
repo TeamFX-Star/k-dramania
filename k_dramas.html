@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Dramania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/drama-list.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image">
+            <div id="logoId" class="logo">K-Dramania</div>
+            
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar">
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <nav class="desktop-menu">
+            <a id="home-link" href="home.html">Home</a>
+            <a id="news-link" href="news.html">News</a>
+            <a id="actors-link" href="#">Actors</a>
+            <a id="reviews-link" href="#">Reviews</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+    
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a href="k_dramas.html">Dramas</a>
+                <a href="news.html">Noticias</a>
+                <a href="#">Actores</a>
+                <a href="#">Opiniones</a>
+            </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+        </div>
+    </div>
+
+ 
+    
+    <main>
+        <section class="drama-list">
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/89/d9/e2/89d9e207e612a441b5085c7d7d4afad1.jpg" alt="Crash Landing on You">
+                <h2>Crash Landing on You</h2>
+                <p id="drama1-description">A South Korean woman accidentally paraglides into North Korea and falls in love with a North Korean officer.</p>
+                <div class="rating">⭐ 4.9 (12,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/59/ff/e8/59ffe82087dcbd004dc9d0f1d6dffd19.jpg" alt="Vincenzo">
+                <h2>Vincenzo</h2>
+                <p id="drama2-description">A Korean-Italian lawyer and consigliere for the mafia returns to Korea and becomes involved in a legal battle.</p>
+                <div class="rating">⭐ 4.7 (9,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/01/4e/7d/014e7d9afecaf31fcbb51df3816652e7.jpg" alt="Itaewon Class">
+                <h2>Itaewon Class</h2>
+                <p id="drama3-description">A young man opens a restaurant in Itaewon and seeks revenge against a powerful family.</p>
+                <div class="rating">⭐ 4.8 (11,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/23/cc/bf/23ccbf28137082dc795cf308f74f5ec0.jpg" alt="Squid Game">
+                <h2>Squid Game</h2>
+                <p id="drama4-description">Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>
+                <div class="rating">⭐ 4.9 (15,678 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/71/77/17/717717aef9e4575139adffedb366251b.jpg" alt="Goblin">
+                <h2>Goblin</h2>
+                <p id="drama5-description">A modern-day goblin seeks to end his cursed immortal life by finding a human bride.</p>
+                <div class="rating">⭐ 4.8 (10,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/12/b1/97/12b19765ba657e9ff49ba4ebd661cabe.jpg" alt="My Love from the Star">
+                <h2>My Love from the Star</h2>
+                <p id="drama6-description">An alien stranded on Earth falls in love with a top actress in South Korea.</p>
+                <div class="rating">⭐ 4.6 (8,765 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/22/a7/fe/22a7fe141f786c41eb16cdd6390444b9.jpg" alt="Descendants of the Sun">
+                <h2>Descendants of the Sun</h2>
+                <p id="drama7-description">A love story between a special forces captain and a doctor who meet in a war-torn country.</p>
+                <div class="rating">⭐ 4.7 (9,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/61/2a/03/612a03fc078a04875ed00c5a2c6f5cac.jpg" alt="The Heirs">
+                <h2>The Heirs</h2>
+                <p id="drama8-description">A group of privileged high school students discover love and friendship.</p>
+                <div class="rating">⭐ 4.5 (7,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/58/34/da/5834dadfb22347ca15d78631d4de4956.jpg" alt="Nam-soon, una chica superfuerte">
+                <h2>Nam-soon, una chica superfuerte</h2>
+                <p id="drama9-description">A woman born with superhuman strength uses her powers to help those in need.</p>
+                <div class="rating">⭐ 4.6 (8,123 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/b0/d9/c3/b0d9c35be656c3335f52ce7d6c4436e5.jpg" alt="Hotel Del Luna">
+                <h2>Hotel Del Luna</h2>
+                <p id="drama10-description">The owner of a hotel for ghosts is bound to the establishment until she can resolve her grudge.</p>
+                <div class="rating">⭐ 4.8 (9,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/c8/1f/92/c81f922bfadccdac54a29ec393b7820e.jpg" alt="While You Were Sleeping">
+                <h2>While You Were Sleeping</h2>
+                <p id="drama11-description">A woman can foresee unfortunate events in her dreams and teams up with a prosecutor to prevent them.</p>
+                <div class="rating">⭐ 4.7 (8,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/f9/ba/99/f9ba99bad820cc7ee306a54adb2a5de1.jpg" alt="Pinocchio">
+                <h2>Pinocchio</h2>
+                <p id="drama12-description">A man with a painful past and a woman with a unique syndrome strive to become journalists.</p>
+                <div class="rating">⭐ 4.6 (7,654 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/79/80/16/798016ab888eae8ef6012466d7a7cab0.jpg" alt="W: Two Worlds">
+                <h2>W: Two Worlds</h2>
+                <p id="drama13-description">A surgeon is pulled into the webtoon world of her father's creation and meets its hero.</p>
+                <div class="rating">⭐ 4.8 (8,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/d4/9e/c1/d49ec13d31c182a6264e03df1cc9aab8.jpg" alt="It's Okay to Not Be Okay">
+                <h2>It's Okay to Not Be Okay</h2>
+                <p id="drama14-description">A caretaker at a psychiatric ward and a children's book author with antisocial personality disorder heal each other's emotional wounds.</p>
+                <div class="rating">⭐ 4.8 (9,543 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/2f/5e/da/2f5edad974e2c75daa0cd16392fd4424.jpg" alt="Weightlifting Fairy Kim Bok Joo">
+                <h2>Weightlifting Fairy Kim Bok Joo</h2>
+                <p id="drama15-description">A weightlifter and a swimmer navigate their way through college, love, and friendship.</p>
+                <div class="rating">⭐ 4.7 (8,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/47/7b/b9/477bb96720a2c68aae7dd180dd639e4f.jpg" alt="Healer">
+                <h2>Healer</h2>
+                <p id="drama16-description">A night courier with exceptional fighting skills takes on a mysterious assignment and discovers his past.</p>
+                <div class="rating">⭐ 4.8 (9,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/bc/16/34/bc16349f1491c6ccd0b0f9dae9584212.jpg" alt="Doctor Stranger">
+                <h2>Doctor Stranger</h2>
+                <p id="drama17-description">A North Korean defector becomes a renowned surgeon in South Korea and tries to reunite with his lost love.</p>
+                <div class="rating">⭐ 4.6 (7,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/4d/73/b5/4d73b51d255498b402bf3eb2b38f67e7.jpg" alt="What's Wrong with Secretary Kim">
+                <h2>What's Wrong with Secretary Kim</h2>
+                <p id="drama18-description">A narcissistic vice president and his long-time secretary navigate their complicated relationship.</p>
+                <div class="rating">⭐ 4.7 (8,123 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/75/17/b3/7517b3a97aeebb22052a17d07a2a137e.jpg" alt="Love in the Moonlight">
+                <h2>Love in the Moonlight</h2>
+                <p id="drama19-description">A crown prince falls in love with a eunuch who is actually a woman in disguise.</p>
+                <div class="rating">⭐ 4.6 (7,987 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/f3/73/2a/f3732a86070cd0c8708b702770596518.jpg" alt="Moon Lovers: Scarlet Heart Ryeo">
+                <h2>Moon Lovers: Scarlet Heart Ryeo</h2>
+                <p id="drama20-description">A modern-day woman is transported back to the Goryeo Dynasty and becomes entangled in palace politics.</p>
+                <div class="rating">⭐ 4.8 (9,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/d3/33/ae/d333ae36ebd50d7a37bbc12f6c225a64.jpg" alt="Legend of the Blue Sea">
+                <h2>Legend of the Blue Sea</h2>
+                <p id="drama21-description">A mermaid from the Joseon era ends up in modern-day Seoul and meets a genius scam artist.</p>
+                <div class="rating">⭐ 4.7 (8,765 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/35/60/0b/35600b72e0566f510053b5961a7ac9c3.jpg" alt="City Hunter">
+                <h2>City Hunter</h2>
+                <p id="drama22-description">A young man trained as a vigilante seeks revenge on behalf of his father's death.</p>
+                <div class="rating">⭐ 4.6 (7,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/7a/c0/ed/7ac0ed3181954d91ba2fc07857ed2564.jpg" alt="Suspicious Partner">
+                <h2>Suspicious Partner</h2>
+                <p id="drama23-description">A prosecutor and a young woman with amnesia team up to solve a murder case.</p>
+                <div class="rating">⭐ 4.5 (7,654 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/d2/83/40/d283405af47b174299320ad92984fc8c.jpg" alt="The King: Eternal Monarch">
+                <h2>The King: Eternal Monarch</h2>
+                <p id="drama24-description">A modern-day Korean emperor passes through a mysterious portal and into a parallel world.</p>
+                <div class="rating">⭐ 4.7 (8,543 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/70/90/51/709051f6fa00ee3a3fb68077dac3e7c1.jpg" alt="Hwarang">
+                <h2>Hwarang</h2>
+                <p id="drama25-description">An elite group of young men in the Silla Dynasty, known as Hwarang, navigate politics and love.</p>
+                <div class="rating">⭐ 4.6 (7,987 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/09/46/35/0946351b236f99bcc8cb11c37beb2795.jpg" alt="Start-Up">
+                <h2>Start-Up</h2>
+                <p id="drama26-description">A young woman dreams of becoming Korea's Steve Jobs and enters the world of start-ups.</p>
+                <div class="rating">⭐ 4.7 (8,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/d9/11/02/d9110298f35e7c69a17b86263149ea3b.jpg" alt="Her Private Life">
+                <h2>Her Private Life</h2>
+                <p id="drama27-description">An art curator leads a double life as a passionate fan of an idol.</p>
+                <div class="rating">⭐ 4.6 (7,654 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/e7/b7/6e/e7b76e2dd7a95a2daacc8bfeac517d27.jpg" alt="Extraordinary You">
+                <h2>Extraordinary You</h2>
+                <p id="drama28-description">A high school student discovers she is a character in a comic book and decides to change her fate.</p>
+                <div class="rating">⭐ 4.7 (8,123 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/3b/47/01/3b470152d135eb35b987f2f0c10b4731.jpg" alt="Something in the Rain">
+                <h2>Something in the Rain</h2>
+                <p id="drama29-description">A woman in her 30s falls for her younger brother's best friend, leading to a complicated romance.</p>
+                <div class="rating">⭐ 4.6 (7,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/0b/67/ed/0b67ed274670ff5fef89e57aa883a4a2.jpg" alt="My ID is Gangnam Beauty">
+                <h2>My ID is Gangnam Beauty</h2>
+                <p id="drama30-description">A young woman undergoes plastic surgery to escape bullying but learns true beauty is more than skin deep.</p>
+                <div class="rating">⭐ 4.7 (8,543 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/cd/e2/45/cde2452dbbfbe41a7eaef32d80498d69.jpg" alt="True Beauty">
+                <h2>True Beauty</h2>
+                <p id="drama31-description">A high school girl uses makeup to hide her true appearance and gains popularity, but worries about her secret being discovered.</p>
+                <div class="rating">⭐ 4.8 (9,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/bf/19/7a/bf197a694e75baf2b8ac950db39a7cbe.jpg" alt="Fight for My Way">
+                <h2>Fight for My Way</h2>
+                <p id="drama32-description">Four friends struggle to achieve their dreams despite their harsh reality.</p>
+                <div class="rating">⭐ 4.6 (7,654 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/c7/53/58/c7535836906a71a34d3a5b21ae6ccbb2.jpg" alt="Because This Is My First Life">
+                <h2>Because This Is My First Life</h2>
+                <p id="drama33-description">A woman and a man enter a contract marriage to address their financial issues.</p>
+                <div class="rating">⭐ 4.7 (8,345 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/f6/4c/25/f64c2516ad238ac86a8afe461852d865.jpg" alt="Prison Playbook">
+                <h2>Prison Playbook</h2>
+                <p id="drama34-description">A baseball star is sent to prison and must navigate life behind bars.</p>
+                <div class="rating">⭐ 4.8 (9,123 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/f5/d4/ec/f5d4ec0eb7c82fde1db23dd456c97401.jpg" alt="Oh My Venus">
+                <h2>Oh My Venus</h2>
+                <p id="drama35-description">A personal trainer helps a lawyer regain her health and confidence after a breakup.</p>
+                <div class="rating">⭐ 4.6 (7,876 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/10/d8/d2/10d8d29adff8baa82ddb1b459907179d.jpg" alt="Rookie Historian Goo Hae-Ryung">
+                <h2>Rookie Historian Goo Hae-Ryung</h2>
+                <p id="drama36-description">A woman defies societal norms to become a royal historian in the Joseon Dynasty.</p>
+                <div class="rating">⭐ 4.7 (8,543 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/06/f3/7c/06f37cbce8be1d5869abbe33c3d160a9.jpg" alt="Uncontrollably Fond">
+                <h2>Uncontrollably Fond</h2>
+                <p id="drama37-description">A top star and a documentary producer reunite years after a painful breakup.</p>
+                <div class="rating">⭐ 4.6 (7,654 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/a6/1c/04/a61c0467a9de565bd8e337022fb0f6f6.jpg" alt="Signal">
+                <h2>Signal</h2>
+                <p id="drama38-description">A profiler and a detective communicate through a mysterious walkie-talkie to solve cold cases.</p>
+                <div class="rating">⭐ 4.9 (10,234 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/66/8f/d9/668fd91d135d1db1806a837c48c53e24.jpg" alt="Stranger">
+                <h2>Stranger</h2>
+                <p id="drama39-description">A prosecutor with a lack of empathy and a warm-hearted detective work together to uncover corruption.</p>
+                <div class="rating">⭐ 4.8 (9,543 reviews)</div>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/38/5d/98/385d986aa40d89bd51ab8f06c2eedbd5.jpg" alt="Romantic Doctor, Teacher Kim">
+                <h2>Romantic Doctor, Teacher Kim</h2>
+                <p id="drama40-description">A famous surgeon becomes a teacher at a small hospital and mentors young doctors.</p>
+                <div class="rating">⭐ 4.7 (8,345 reviews)</div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="js/translate_kdramas_list.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/session_logic.js"></script>
+    <script src="js/replace_rating.js"></script>
+    <script src="css/modal.js"></script>
+    
+</body>
+</html>

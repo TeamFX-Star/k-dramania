@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Dramania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image">
+            <div id="logoId" class="logo">K-Dramania</div>
+            
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar">
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <nav class="desktop-menu">
+            <a id="home-link" href="home.html">Dramas</a>
+            <a id="dramas-link" href="k_dramas.html">Dramas</a>
+            <a id="actors-link" href="#">Actors</a>
+            <a id="reviews-link" href="#">Reviews</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+    
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a href="k_dramas.html">Dramas</a>
+                <a href="news.html">Noticias</a>
+                <a href="#">Actores</a>
+                <a href="#">Opiniones</a>
+            </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <main>
+        <section class="news-list">
+            <a href="news-pague-1.html" class="news">
+                <div class="news-content">
+                    <h2 class="post-title-1">Guía esencial de K-dramas: 10 títulos para un fin de semana junto a John Park, Lee Chae-min, entre otros
+                    </h2>
+                    <p class="post-content-1">Las producciones surcoreanas se han posicionado como las favoritas de los espectadores de todo el mundo.</p>
+                </div>
+                <img src="https://www.infobae.com/new-resizer/1WwLCNtWkZaBpywP2mIkTzT1Pe4=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/4V4IKF5MIBHHDC6O45Z5Y6F6YM.jpg" alt="Tu guía del fin de semana:  K-dramas en Netflix para ver sin parar">
+            </a>
+        
+
+            <a href="news-pague-2.html" class="news">
+                <div class="news-content">
+                    <h2 class="post-title-2">Guía esencial de K-dramas: 10 títulos para un fin de semana junto a John Park, Lee Chae-min, entre otros</h2>
+                    <p class="post-content-2">La plataforma de streaming ha incrementado significativamente su catálogo en los últimos años para satisfacer a sus usuarios.</p>
+                </div>
+                <img src="https://www.infobae.com/new-resizer/o5t4_6nG6AcyyqduREL6Vd8oqbo=/350x197/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/V5J4JEY3WBFEFKPLKJDD2DNHIQ.jpg" alt="Guía esencial de K-dramas: 10 títulos para un fin de semana junto a John Park, Lee Chae-min, entre otros">
+            </a>
+
+        
+            <a href="news-pague-3.html" class="news">
+                <div class="news-content">
+                    <h2 class="post-title-3">Dramas coreanos en Netflix: un vistazo a algunas producciones cómo ‘Jerarquía’ y ‘King the Land’</h2>
+                    <p class="post-content-3">Recientemente, la plataforma estrenó una nueva serie con Roh Jeong-eui, Lee Chae-Min y Kim Jae-Won como protagonistas.</p>
+                </div>
+                <img src="https://www.infobae.com/new-resizer/C8V-Uig8bD1Yi61uwNHvHAg_6oM=/265x149/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/NJXU426LEFFFNHPULL2BLLLRPE.jpg" alt="Dramas coreanos en Netflix: un vistazo a algunas producciones cómo ‘Jerarquía’ y ‘King the Land’">
+            </a>
+        
+            
+            <!-- Agrega más elementos 'a' con diferentes URLs si es necesario -->
+        </section>
+            </main>
+            <script src="js/translate_news.js"></script>
+            <script src="js/mobile_menu.js"></script>
+            <script src="js/session_logic.js"></script>
+        
+</body>
+</html>

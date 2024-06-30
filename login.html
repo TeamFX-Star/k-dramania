@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container" id="login-form">
+      <h1 id="login-title">Login</h1>
+      <form id="login-form-element">
+        <div class="input__item">
+          <label for="">
+        <label for="email" id="email-label">Email</label>
+        <input type="text" id="email" name="email" required>
+              </butAton>
+          </label>
+      </div>
+      <label for="password" id="password-label">Password</label>
+
+        <div class="input__item">
+          <label for="">
+
+            <input type="password" id="password" name="password" required>
+              <button class="showPass" id="togglePassword">
+                  <i class="fa-solid fa-eye" id="toggleIcon"></i>
+              </button>
+          </label>
+      </div>
+      
+        <button type="submit" id="login-button">Login</button>
+        <p id="login-message"></p>
+      </form>
+      <p id="signup-text">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+    </div>
+
+    <div class="form-container" id="signup-form" style="display: none;">
+      <h1 id="signup-title">Sign Up</h1>
+      <form id="signup-form-element">
+
+        <div class="input__item">
+          <label for="">
+        <label for="new-username" id="new-username-label">Email</label>
+        <input type="text" id="new-username" name="new-username" required>
+          </label>
+      </div>
+        
+        <div class="input__item">
+          <label for="">
+        <label for="new-email" id="new-email-label">Email</label>
+        <input type="email" id="new-email" name="new-email" required>
+          </label>
+      </div>
+      <label for="new-password" id="new-password-label">PasswoAArd</label>
+        <div class="input__item">
+          <label for="">
+            <input type="password" id="new-password" name="new-password" required>
+              <button class="showPass" id="togglePassword2">
+                  <i class="fa-solid fa-eye" id="toggleIcon2"></i>
+              </button>
+          </label>
+      </div>
+
+        <button type="submit" id="signup-button">Sign Up</button>
+        <p id="signup-message"></p>
+      </form>
+      <p id="login-text">Already have an account? <a href="#" id="login-link">Login</a></p>
+    </div>
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

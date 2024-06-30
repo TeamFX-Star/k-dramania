@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Dramania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/news-pague.css">
+    <link rel="stylesheet" href="css/header.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image">
+            <div id="logoId" class="logo">K-Dramania</div>
+            
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar">
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+        
+        <nav class="desktop-menu">
+            <a id="home-link" href="home.html">Dramas</a>
+            <a id="news-link" href="news.html">News</a>
+            <a id="actors-link" href="#">Actors</a>
+            <a id="reviews-link" href="#">Reviews</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+    
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a id="home-link" href="home.html">Dramas</a>
+                <a id="news-link" href="news.html">News</a>
+                <a id="actors-link" href="#">Actors</a>
+                <a id="reviews-link" href="#">Reviews</a>
+
+            </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <main>
+
+
+
+        <div class="container">
+            <div class="main-content">
+                <div class="main">
+                <div class="post">
+                    <h1 class="post-title-1">Dramas coreanos en Netflix: un vistazo a algunas producciones cómo ‘Jerarquía’ y ‘King the Land’</h1>
+                    <p class="post-content-1">Recientemente, la plataforma estrenó una nueva serie con Roh Jeong-eui, Lee Chae-Min y Kim Jae-Won como protagonistas                    </p>
+
+
+                    <div class="post-date">
+                        <span class="post-meta-1">Por Luz Gonzalez</span>
+                        <span class="post-meta-2">22 Jun, 2024 01:46 p.m. MX</span>
+                    </div>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+<hr>
+
+
+                <div class="post">
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/0ultDaQCf2ZV1nw991hP5XYVwu4=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/OF3NH6NYQRA7TLOZZJTDYEFKVU.jpg" alt="Captura del tráiler oficial de 'Jerarquía'">
+                    <p class="post-meta-3">Captura del tráiler oficial de 'Jerarquía'</p>
+                    <p class="post-content-2">En los últimos años, Netflix ha dominado como la plataforma con mayor cantidad contenidos coreanos. No es novedad que los k-dramas se hayan convertido en los audiovisuales más populares y consumidos a lo largo del mundo. Ejemplos de estos hay muchos, como Mi adorable demonio (My Demon - 2023) con Song Kang como protagonista, La gloria, Love Alarm, Alquimia de almas y muchos más.</p>
+                    <p class="post-content-3">Por eso, en esta oportunidad, vamos a seleccionar tres series coreanas disponibles en Netflix que se estrenaron recientemente.</p>
+
+                </div>
+
+                <div class="post">
+                    <h2 class="post-title-2">Jerarquía (disponible en Netflix)</h2>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/xiEzz9vrhAnXfRK5ccZRJpJuPCk=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/K2XETUWE3FEI7OHFYQNHFHXXRI.jpg" alt="El drama de comedia que está gustando al público. (Netflix)">
+                    <p class="post-meta-4">Captura del tráiler oficial de 'Jerarquía'</p>
+                    <p class="post-content-4">Arrancamos con <b>Jerarquía,</b> una miniserie que debutó en <b>Netflix </b>el pasado 7 de junio y rápidamente se ubicó entre los contenidos más populares. La trama sigue a <b>Kang Ha</b>, un estudiante que consigue una beca para asistir a la prestigiosa escuela secundaria <b>Jooshin</b>. Esta institución es famosa por su alumnado, compuesto por los hijos de las familias más ricas e influyentes de Corea del Sur. Dentro de esta escuela, un pequeño grupo de estudiantes domina y dicta las reglas para todos los demás. Sin embargo,<b> Kang Ha</b> guarda un secreto que comienza a desestabilizar este orden establecido, creando tensiones y conflictos que desafían las normas de la élite escolar. La serie ofrece una mirada crítica sobre el poder y las diferencias sociales en el ámbito educativo.</p>
+                    <p class="post-content-5">Jerarquía fue dirigida por<b> Bae Hyun-jin</b>, conocido por su trabajo en <b>Big Mouth: Artista de la estafa</b>, y producida por <b>Studio Dragon</b>, la compañía detrás de éxitos como<b> Dulce hogar</b> y <b>Wedding Impossible</b>. El elenco de la serie incluye a <b>Roh Jeong-eui </b>(<b>Aquel año nuestro, 18 otra vez</b>), <b>Lee Chae-Min</b> (<b>Love All Play, High Class</b>),<b> Kim Jae-Won</b> (<b>Nuestro horizonte azul, Fall For You</b>),<b> Ji Hye-won</b> (<b>El sonido de la magia</b>) y <b>Lee Won-jung </b>(<b>Woo, una abogada extraordinaria</b>).</p>
+                </div>
+
+                <div class="post">
+                    <h2 class="post-title-3">King the Land (disponible en Netflix)</h2>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/5UTa1k-f7Hwcn0wiWjWuFQZQAE4=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/OFKKR25XZJA53KKZVC33Z3OD6U.jpg" alt='King The Land (Netflix)'>
+                    <p class="post-meta-5">King The Land (Netflix)</p>
+                    <p class="post-content-6"><b>King the Land</b>, protagonizado por<b> Lee Jun-ho</b> (<b>Solo amor</b>) y <b>Im Yoon-ah</b> (<b>Misión secreto</b>), es un k-drama de<b> Netflix</b> compuesto por 16 episodios que ha capturado la atención del público por su mezcla de romance y drama empresarial. La serie sigue la intensa lucha por el control de una empresa familiar, donde un encantador heredero enfrenta numerosos obstáculos para asegurar su posición legítima. En medio de esta batalla por el poder, se encuentra con una empleada famosa por su irresistible sonrisa, una característica que él no puede soportar. A medida que sus caminos se cruzan, surgen situaciones llenas de tensión y humor, desvelando aspectos profundos de sus personalidades y sacando a la luz secretos enterrados.</p>
+                    <p class="post-content-7">La trama se adentra en las complejas dinámicas familiares, rivalidades internas y luchas de poder, explorando cómo las diferencias personales y profesionales pueden provocar un enorme caos para los personajes principales.<b> King the Land</b> ofrece una visión divertida del mundo de las grandes empresas, acompañado de un desarrollo de personajes enriquecedor y momentos conmovedores, junto con giros inesperados que mantienen a los espectadores expectantes.</p>
+                </div>
+
+                <div class="post">
+                    <h2 class="post-title-4">Una familia atípica - The Atypical Family (disponible en Netflix)</h2>
+                    <img class="featured-image" src="https://www.infobae.com/new-resizer/NjTbhdXztWg847VDjPgBKoEziKE=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/RZLWCXOZPRCNFKZTPRFEXLPQ7U.jpg" alt='Una familia atípico'>
+                    <p class="post-meta-6">Una familia atípico</p>
+                    <p class="post-content-8"><b>Una familia atípica</b>, con <b>Cheon Woo-hee</b> (<b>The 8 Show</b>) y<b> Jang Ki-yong</b> (<b>Born Again</b>) como protagonistas, es una serie disponible en <b>Netflix</b> que combina elementos fantásticos con dramas familiares y romances. La historia se centra en la familia <b>Bok</b>, cuyos miembros nacen con habilidades especiales. Sin embargo, debido a una serie de misteriosos eventos, comienzan a perder estos poderes uno tras otro. Todo cambia cuando<b> Do Da-hae</b> entra en la vida de los<b> Bok </b>y parece tener un impacto significativo en la familia, llevándolos a creer que ella podría ser la responsable para recuperar sus habilidades perdidas.</p>
+                    <p class="post-content-9">La serie explora no solo los desafíos sobrenaturales enfrentados por la familia <b>Bok,</b> sino también las complejas dinámicas familiares y personales de cada miembro. Con un enfoque en la resiliencia y la búsqueda de identidad en un mundo en constante cambio, <b>Una familia atípica</b> invita a los espectadores a reflexionar sobre la conexión humana y la capacidad de adaptación frente a los desafíos modernos, incluyendo los avances tecnológicos y las ansiedades contemporáneas.</p>
+                    </div>
+                    
+                    <div class="post">
+                        <h2 class="post-title-5">Mi Adorable Demonio - My Demon (disponible en Netflix)</h2>
+                        <img class="featured-image" src="https://media.vogue.mx/photos/657a0c7430091f9fd7dd3cbb/master/w_1600,c_limit/mi-adorable-demonio-netflix.jpg" alt="Mi Adorable Demonio">
+                        <p class="post-meta-7">Mi Adorable Demonio</p>
+                        <p class="post-content-10"><b>Mi Adorable Demonio</b>, protagonizada por <b>Song Kang</b> (<b>Navillera</b>) y <b>Kim Yoo-jung</b> (<b>Backstreet Rookie</b>), es una serie de drama y fantasía disponible en <b>Netflix</b>. Estrenada el 1 de diciembre de 2023, la historia sigue a <b>Do Do-Hee</b>, una joven heredera atrapada en una lucha de poder dentro de su familia adoptiva, y a <b>Jung Gu-Won</b>, un demonio que pierde sus poderes al conocerla. Su inesperado encuentro lleva a una serie de eventos que desafían su destino y la naturaleza de sus deseos, creando una conexión que podría cambiar sus vidas para siempre.</p>
+                        <p class="post-content-11">La serie explora temas de poder, redención y amor a través de una narrativa que combina elementos de fantasía y romance. Gu-Won, quien negociaba almas humanas, se ve afectado por su relación con Do-Hee, llevando a situaciones de peligro y revelaciones personales. La química entre los protagonistas y los giros dramáticos hacen de <b>Mi Adorable Demonio</b> una propuesta cautivadora para los fanáticos del género.</p>
+                    </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-1">Lo Último</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li><a class="sidebar-name-1" href="#">6 nuevos K-Dramas para ver en junio de 2024</a></li>
+                            <li><a class="sidebar-name-2" href="#">K-Dramas que esperamos en junio de 2024</a></li>
+                            <li><a class="sidebar-name-3" href="#">Todos los doramas que se estrenan en junio de 2024</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-2">Te Recomendamos</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li>
+                                <img src="https://1.vikiplatform.com/c/40512c/1a23e80a73.jpg?x=b&s=1600x900&e=t&q=g" alt="Imagen 1">
+                                <a class="sidebar-name-4" href="#">El Jugador 2: Maestro de los estafadores</a>
+                            </li>
+                            <li>
+                                <img src="https://finde.latercera.com/wp-content/uploads/2024/03/La-reina-de-las-la%CC%81grimas-11.jpeg" alt="Imagen 2">
+                                <a class="sidebar-name-5" href="#">La reina de las lágrimas</a>
+                            </li>
+                            <li>
+                                <img src="https://1.vikiplatform.com/c/40438c/402ce72764.jpg?x=b&s=960x540&e=t&q=g" alt="Imagen 3">
+                                <a class="sidebar-name-6" href="#">Mi dulce mafioso</a>
+                            </li>
+                            <li>
+                                <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2024/06/23/667849710bb03c21cd6f41d0.webp" alt="Imagen 4">
+                                <a class="sidebar-name-7" href="#">Señorita noche y día</a>
+                            </li>
+                            <li>
+                                <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2024/06/23/667849710bb03c21cd6f41d0.webp" alt="Imagen 4">
+                                <a class="sidebar-name-8" href="#">Señorita noche y día</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sidebar-item">
+                    <h2 class="sidebar-title-3">Te puede interesar:</h2>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li><a class="sidebar-name-9" href="#">The Player 2: Maestro de los estafadores</a></li>
+                            <li><a class="sidebar-name-10" href="#">Jerarquía</a></li>
+                            <li><a class="sidebar-name-11" href="#">Mi dulce mafioso</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/session_logic.js"></script>
+<script src="js/translate_news_pague_3.js"></script>
+<script src="js/mobile_menu.js"></script>
+</body>
+</html>
