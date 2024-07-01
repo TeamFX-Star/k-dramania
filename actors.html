@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-Dramania</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="css/actors.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Mueve el #menuButton al inicio -->
+            <span id="menuButton" class="menu-icon material-icons" onclick="toggleMenu()">menu</span>
+            <img src="src/logo.png" alt="Logo Image" class="logo-image" />
+            <div id="logoId" class="logo">K-Dramania</div>
+
+            <div id="dropdown-cc" class="dropdown">
+                <div id="user-dropdown" class="user-dropdown icon-container">
+                    <span class="username"><i class="material-icons">person</i></span>
+                    <div class="dropdown-content">
+                        <img src="src/logo.png" alt="User Avatar" class="user-avatar" />
+                        <a id="name-content" href="#">User: </a>
+                        <button onclick="removeItems()" id="closeS" class="closeSession" href="#">
+                            Sign Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="language-selector icon-container">
+                <label for="lang-select"><i class="material-icons">translate</i></label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </div>
+        </div>
+
+        <nav class="desktop-menu">
+            <a id="home-link" href="home.html">Home</a>
+            <a id="home-link" href="k_dramas.html">Dramas</a>
+            <a id="news-link" href="news.html">News</a>
+            <a id="actors-link" href="actors.html">Actors</a>
+            <a id="support-link" href="support.html">Support</a>
+            <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
+            <button id="open-signup-modal" class="sign-up">Registrarse</button>
+        </nav>
+
+        <!-- Menú lateral para dispositivos móviles -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="menu-close">
+                <span class="close-icon material-icons" onclick="closeMenu()">close</span>
+            </div>
+            <div id="mobile-nav-links">
+                <a id="home-link" href="k_dramas.html">Inicio</a>
+                <a id="dramas-link" href="k_dramas.html">Dramas</a>
+                <a id="news-link" href="news.html">Noticias</a>
+                <a id="actors-link" href="actors.html">Actores</a>
+                <a id="support-link" href="support.html">Soporte</a>
+                </div>
+            <div class="mobile-menu-buttons">
+                <button id="sign-in-menu-button" class="mobile-menu-button">
+                    BUTTON 1
+                </button>
+                <button id="sign-up-menu-button" class="mobile-menu-button">
+                    BUTTON 2
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="drama-list">
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/91/ee/0e/91ee0eebd81ebe2bda00040c4c552097.jpg" alt="Kim Yeo-jin" />
+                <h2>Kim Yeo-jin</h2>
+                <p class="p_content_1">
+                    Kim Yeo-jin es una actriz veterana con una extensa carrera en
+                    teatro, cine y televisión. Es conocida por su capacidad para
+                    interpretar una amplia gama de personajes, desde heroínas hasta
+                    villanas.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/02/7f/76/027f7627cff05b0cd5a55469f3e27db9.jpg" alt="Hyun Bin" />
+                <h2>Hyun Bin</h2>
+                <p class="p_content_2">
+                    Nacido como Kim Tae-pyung, Hyun Bin debutó en 2003 en la serie
+                    'Bodyguard'. Alcanzó la fama con 'My Name is Kim Sam-soon' y 'Secret
+                    Garden'. Es conocido por su actuación carismática y su versatilidad
+                    en papeles tanto dramáticos como románticos.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/f4/3a/7b/f43a7bb5cd844ef9f241f94fec5db455.jpg" alt="Son Ye-jin" />
+                <h2>Son Ye-jin</h2>
+                <p class="p_content_3">
+                    Son Ye-jin es una actriz muy respetada en Corea del Sur, conocida
+                    por sus papeles en películas y dramas. Debutó en 2001 y rápidamente
+                    se convirtió en una de las actrices más populares por sus roles en
+                    dramas románticos y de época.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/ad/a7/ce/ada7ce41c59b2819c80d896a72813fc9.jpg" alt="Kim Yeo-jin" />
+                <h2>Seo Ji-hye</h2>
+                <p class="p_content_4">
+                    Kim Yeo-jin es una actriz veterana con una extensa carrera en
+                    teatro, cine y televisión. Es conocida por su capacidad para
+                    interpretar una amplia gama de personajes, desde heroínas hasta
+                    villanas.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/44/42/66/444266d081560307bf3e62b5bc8f83f4.jpg"
+                    alt="Kim Jung-hyun" />
+                <h2>Kim Jung-hyun</h2>
+                <p class="p_content_5">
+                    Kim Jung-hyun comenzó su carrera en teatro antes de hacer la
+                    transición a la televisión. Ha ganado popularidad por sus papeles en
+                    'School 2017' y 'Welcome to Waikiki'.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/0a/e4/b1/0ae4b1383fb3ba2691189d736b856990.jpg"
+                    alt="Song Joong-ki" />
+                <h2>Song Joong-ki</h2>
+                <p class="p_content_6">
+                    Song Joong-ki comenzó su carrera en el entretenimiento como
+                    presentador de programas de música y actor de cine. Saltó a la fama
+                    con su papel en el drama histórico 'Sungkyunkwan Scandal' y ha sido
+                    un actor destacado en dramas y películas.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/b4/5c/67/b45c675159ae69cb78c6bd760b082068.jpg"
+                    alt="Jeon Yeo-been" />
+                <h2>Jeon Yeo-been</h2>
+                <p class="p_content_7">
+                    Jeon Yeo-been es conocida por sus habilidades de actuación en cine y
+                    televisión. Ganó el reconocimiento por su actuación en 'After My
+                    Death', lo que le valió varios premios.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/81/6b/65/816b65426e766f7d04d7426a7540a2cf.jpg" alt="Ok Taec-yeon" />
+                <h2>Ok Taec-yeon</h2>
+                <p class="p_content_8">
+                    Miembro del grupo de K-pop 2PM, Ok Taec-yeon ha logrado una exitosa
+                    carrera en la actuación. Su versatilidad como actor le ha permitido
+                    desempeñar una variedad de roles en dramas y películas.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/38/ff/3c/38ff3caebd93d38221faf770829ede19.jpg"
+                    alt="Park Seo-joon" />
+                <h2>Park Seo-joon</h2>
+                <p class="p_content_9">
+                    Park Seo-joon debutó en 2011 y ha sido uno de los actores más
+                    populares en Corea del Sur. Es conocido por su habilidad para
+                    interpretar papeles cómicos y románticos, además de su carisma en
+                    pantalla.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/3b/44/d1/3b44d107cbb27a59e7476182742cac2a.jpg" alt="Kim Da-mi" />
+                <h2>Kim Da-mi</h2>
+                <p class="p_content_10">
+                    Kim Da-mi debutó en el cine y rápidamente se destacó por su
+                    actuación en 'The Witch: Part 1. The Subversion'. Su papel en
+                    'Itaewon Class' consolidó su posición como una de las actrices
+                    jóvenes más prometedoras.
+                </p>
+            </div>
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/fb/3e/6e/fb3e6e94780dfb80872c783843b4a181.jpg"
+                    alt="Yoo Jae-myung" />
+                <h2>Yoo Jae-myung</h2>
+                <p class="p_content_11">
+                    Yoo Jae-myung es conocido por sus papeles en dramas y películas. Ha
+                    ganado reconocimiento por su habilidad para interpretar personajes
+                    complejos y autoritarios.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/07/94/ce/0794cefcad370d69a650e44fb1d34f9b.jpg" alt="Kwon Nara" />
+                <h2>Kwon Nara</h2>
+                <p class="p_content_12">
+                    Kwon Nara es una actriz y cantante, ex miembro del grupo de chicas
+                    Hello Venus. Ha transitado exitosamente hacia la actuación,
+                    destacándose en varios dramas.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/736x/85/96/7b/85967b8820c2aeaac02ae5b9c2407c66.jpg" alt="Lee Jung-jae" />
+                <h2>Lee Jung-jae</h2>
+                <p class="p_content_13">
+                    Lee Jung-jae es un veterano actor de cine y televisión en Corea del
+                    Sur. Comenzó su carrera como modelo antes de hacer su debut actoral
+                    en 1993. Ha sido aclamado por su versatilidad y profundidad en la
+                    actuación.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/1e/7c/91/1e7c911e132df68a426129d75e7a2d75.jpg" alt="Park Hae-soo" />
+                <h2>Park Hae-soo</h2>
+                <p class="p_content_14">
+                    Park Hae-soo es un actor conocido por su trabajo en teatro, cine y
+                    televisión. Ganó reconocimiento por su papel en el drama 'Prison
+                    Playbook' y ha continuado destacándose en la industria.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/53/cb/74/53cb749c6c4621b8336034f60eb5c70f.jpg" alt="Wi Ha-joon" />
+                <h2>Wi Ha-joon</h2>
+                <p class="p_content_15">
+                    Wi Ha-joon es un actor y modelo que ha ganado popularidad en los
+                    últimos años. Es conocido por sus papeles en dramas de suspenso y
+                    misterio.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/78/db/4d/78db4de434a57a05c83a13b6b19e47dc.jpg" alt="Jung Ho-yeon" />
+                <h2>Jung Ho-yeon</h2>
+                <p class="p_content_16">
+                    Jung Ho-yeon es una modelo internacional que hizo su debut como
+                    actriz en 'Squid Game'. Su actuación ha sido muy elogiada y ha
+                    ganado numerosos seguidores.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/43/db/ee/43dbee52eef0771a7ba1891d1a3af874.jpg" alt="Gong Yoo" />
+                <h2>Gong Yoo</h2>
+                <p class="p_content_17">
+                    Gong Yoo es uno de los actores más populares de Corea del Sur. Ganó
+                    fama con 'Coffee Prince' y ha mantenido su estatus de estrella con
+                    sus roles en cine y televisión.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/2e/e1/33/2ee13326c3b0c5fd4002a29bcf3e723a.jpg" alt="Kim Go-eun" />
+                <h2>Kim Go-eun</h2>
+                <p class="p_content_18">
+                    Kim Go-eun debutó en el cine antes de hacer la transición a la
+                    televisión. Es conocida por su naturalidad y versatilidad en la
+                    actuación.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/19/3d/16/193d167e106d1eccd59b7867cb9b4d4e.jpg"
+                    alt="Lee Dong-wook" />
+                <h2>Lee Dong-wook</h2>
+                <p class="p_content_19">
+                    Lee Dong-wook es un actor conocido por su versatilidad en la
+                    pantalla, destacándose en roles tanto cómicos como dramáticos. Su
+                    papel en 'Goblin' le otorgó un reconocimiento internacional.
+                </p>
+            </div>
+
+            <div class="drama">
+                <img src="https://i.pinimg.com/564x/17/97/b5/1797b5171b7d76636ead247fabbdd31a.jpg" alt="Yoo In-na" />
+                <h2>Yoo In-na</h2>
+                <p class="p_content_20">
+                    Yoo In-na es una actriz y DJ de radio que ha ganado popularidad por
+                    sus roles en varios dramas románticos. Es conocida por su química en
+                    pantalla y su presencia encantadora.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="drama-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-name"></h2>
+                <span class="close">&times;</span>
+            </div>
+            <p id="modal-birthdate"></p>
+            <p id="modal-biography"></p>
+            <h3 class="p_meta_1">Other Works</h3>
+            <ul id="modal-other-works"></ul>
+            <h3 class="p_meta_2">Images</h3>
+            <div id="modal-images" class="image-gallery">
+                <!-- Aquí se llenarán las imágenes dinámicamente desde JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mobile_menu.js"></script>
+    <script src="js/translate_actors.js"></script>
+    <script src="js/session_logic.js"></script>
+    <script src="js/modal_actors.js"></script>
+</body>
+
+</html>

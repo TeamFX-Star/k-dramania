@@ -43,8 +43,8 @@
         <nav class="desktop-menu">
             <a id="dramas-link" href="k_dramas.html">Dramas</a>
             <a id="news-link" href="news.html">News</a>
-            <a id="actors-link" href="#">Actors</a>
-            <a id="reviews-link" href="#">Reviews</a>
+            <a id="actors-link" href="actors.html">Actors</a>
+            <a id="support-link" href="support.html">Soporte</a>
             <button id="open-signin-modal" class="sign-in">Iniciar Sesión</button>
             <button id="open-signup-modal" class="sign-up">Registrarse</button>
         </nav>
@@ -55,14 +55,15 @@
                 <span class="close-icon material-icons" onclick="closeMenu()">close</span>
             </div>
             <div id="mobile-nav-links">
-                <a href="k_dramas.html">Dramas</a>
-                <a href="news.html">Noticias</a>
-                <a href="#">Actores</a>
-                <a href="#">Opiniones</a>
-            </div>
+                <a id="home-link" href="k_dramas.html">Inicio</a>
+                <a id="dramas-link" href="k_dramas.html">Dramas</a>
+                <a id="news-link" href="news.html">Noticias</a>
+                <a id="actors-link" href="actors.html">Actores</a>
+                <a id="support-link" href="support.html">Soporte</a>
+                </div>
             <div class="mobile-menu-buttons">
-                <button id="sign-in-menu-button" class="mobile-menu-button">BUTTON 1</button>
-                <button id="sign-up-menu-button" class="mobile-menu-button">BUTTON 2</button>
+                <button onclick="abrirPagina()" id="sign-in-menu-button" class="mobile-menu-button">Iniciar Sesión</button>
+                <button onclick="abrirPagina()" id="sign-up-menu-button" class="mobile-menu-button">Registrarse</button>
             </div>
         </div>
     </header>
@@ -75,61 +76,57 @@
             <p>Explora nuestra colección curada de los K-Dramas más populares y candentes. Encuentra información detallada, reseñas y más.</p>
             <div class="actions">
                 <a href="k_dramas.html" class="browse">Ver Dramas</a>
-                <a href="k_dramas.html" class="search">Buscar</a>
+                <a href="k_dramas.html" class="search">Soporte</a>
             </div>
         </section>
         <section class="drama-list">
-            <div class="drama">
+            <div class="drama" onclick="redirectToNewPage()">
                 <img src="https://i.pinimg.com/564x/89/d9/e2/89d9e207e612a441b5085c7d7d4afad1.jpg" alt="Crash Landing on You">
                 <h2>Crash Landing on You</h2>
-                <p id="drama1-description">Una mujer surcoreana se lanza accidentalmente en parapente hacia Corea del Norte y se enamora de un oficial norcoreano.</p>
+                <p id="drama1-description">A South Korean woman accidentally paraglides into North Korea and falls in love with a North Korean officer.</p>
                 <div class="rating">⭐ 4.9 (12,345 reviews)</div>
             </div>
-            <div class="drama">
+            <div class="drama" onclick="redirectToNewPage()">
                 <img src="https://i.pinimg.com/736x/59/ff/e8/59ffe82087dcbd004dc9d0f1d6dffd19.jpg" alt="Vincenzo">
                 <h2>Vincenzo</h2>
-                <p id="drama2-description">Un abogado ítalo-coreano y consigliere de la mafia regresa a Corea y se involucra en una batalla legal.</p>
+                <p id="drama2-description">A Korean-Italian lawyer and consigliere for the mafia returns to Korea and becomes involved in a legal battle.</p>
                 <div class="rating">⭐ 4.7 (9,876 reviews)</div>
             </div>
-            <div class="drama">
+            <div class="drama" onclick="redirectToNewPage()">
                 <img src="https://i.pinimg.com/736x/01/4e/7d/014e7d9afecaf31fcbb51df3816652e7.jpg" alt="Itaewon Class">
                 <h2>Itaewon Class</h2>
-                <p id="drama3-description">Un joven abre un restaurante en Itaewon y busca venganza contra una familia poderosa.</p>
+                <p id="drama3-description">A young man opens a restaurant in Itaewon and seeks revenge against a powerful family.</p>
                 <div class="rating">⭐ 4.8 (11,234 reviews)</div>
             </div>
-            <div class="drama">
-                <img src="https://via.placeholder.com/150" alt="Squid Game">
+            <div class="drama" onclick="redirectToNewPage()">
+                <img src="https://i.pinimg.com/564x/23/cc/bf/23ccbf28137082dc795cf308f74f5ec0.jpg" alt="Squid Game">
                 <h2>Squid Game</h2>
-                <p id="drama4-description">Cientos de jugadores con problemas económicos aceptan una extraña invitación para competir en juegos infantiles. Adentro, un tentador premio los espera, con altas apuestas mortales.</p>
+                <p id="drama4-description">Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits — with deadly high stakes.</p>
                 <div class="rating">⭐ 4.9 (15,678 reviews)</div>
             </div>
-            <!-- Nuevo K-Drama agregado -->
-            <div class="drama">
-                <img src="https://via.placeholder.com/150" alt="Another K-Drama">
-                <h2>Another K-Drama</h2>
-                <p id="drama5-description">Short description of the new K-Drama.</p>
-                <div class="rating">⭐ Rating (Number of reviews)</div>
+            <div class="drama" onclick="redirectToNewPage()">
+                <img src="https://i.pinimg.com/736x/71/77/17/717717aef9e4575139adffedb366251b.jpg" alt="Goblin">
+                <h2>Goblin</h2>
+                <p id="drama5-description">A modern-day goblin seeks to end his cursed immortal life by finding a human bride.</p>
+                <div class="rating">⭐ 4.8 (10,345 reviews)</div>
             </div>
-            <!-- Segundo nuevo K-Drama agregado -->
-            <div class="drama">
-                <img src="https://via.placeholder.com/150" alt="New K-Drama">
-                <h2>New K-Drama</h2>
-                <p id="drama6-description">Short description of the new K-Drama.</p>
-                <div class="rating">⭐ Rating (Number of reviews)</div>
+            <div class="drama" onclick="redirectToNewPage()">
+                <img src="https://i.pinimg.com/564x/12/b1/97/12b19765ba657e9ff49ba4ebd661cabe.jpg" alt="My Love from the Star">
+                <h2>My Love from the Star</h2>
+                <p id="drama6-description">An alien stranded on Earth falls in love with a top actress in South Korea.</p>
+                <div class="rating">⭐ 4.6 (8,765 reviews)</div>
             </div>
-            <!-- Tercer nuevo K-Drama agregado -->
-            <div class="drama">
-                <img src="https://via.placeholder.com/150" alt="New K-Drama">
-                <h2>New K-Drama</h2>
-                <p id="drama7-description">Short description of the new K-Drama.</p>
-                <div class="rating">⭐ Rating (Number of reviews)</div>
+            <div class="drama" onclick="redirectToNewPage()">
+                <img src="https://i.pinimg.com/564x/22/a7/fe/22a7fe141f786c41eb16cdd6390444b9.jpg" alt="Descendants of the Sun">
+                <h2>Descendants of the Sun</h2>
+                <p id="drama7-description">A love story between a special forces captain and a doctor who meet in a war-torn country.</p>
+                <div class="rating">⭐ 4.7 (9,234 reviews)</div>
             </div>
-            <!-- Cuarto nuevo K-Drama agregado -->
-            <div class="drama">
-                <img src="https://via.placeholder.com/150" alt="New K-Drama">
-                <h2>New K-Drama</u>
-                <p id="drama8-description">Short description of the new K-Drama.</p>
-                <div class="rating">⭐ Rating (Number of reviews)</div>
+            <div class="drama" onclick="redirectToNewPage()">
+                <img src="https://i.pinimg.com/564x/61/2a/03/612a03fc078a04875ed00c5a2c6f5cac.jpg" alt="The Heirs">
+                <h2>The Heirs</h2>
+                <p id="drama8-description">A group of privileged high school students discover love and friendship.</p>
+                <div class="rating">⭐ 4.5 (7,876 reviews)</div>
             </div>
         </section>
     </main>
@@ -137,6 +134,13 @@
     <script src="js/mobile_menu.js"></script>
     <script src="js/session_logic.js"></script>
     <script src="js/translate_home.js"></script>
+    <script src="js/replace_rating.js"></script>
+    <script>
+        function abrirPagina() {
+            // Redirigir a la página deseada
+            window.location.href = 'login';
+        }
+    </script>
 </body>
 
 </html>
