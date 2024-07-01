@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const commentsLabel = language === 'es' ? 'Comentarios' : 'Comments';
         const repartsLabel = language === 'es' ? 'Reparto' : 'Cast';
         const noCommentsText = language === 'es' ? 'Aún no hay comentarios. Añade uno para iniciar la conversación.' : 'No comments yet. Add one to start the conversation.';
-        const noLoginText = language === 'es' ? 'Para comentar, por favor <a href="login.html">inicia sesión</a> o <a href="/signup">crea una cuenta</a>.' : 'To comment, please <a href="login.html">login</a> or <a href="/signup">create an account</a>.';
+        const noLoginText = language === 'es' ? 'Para comentar, por favor <a href="login.html">inicia sesión</a> o <a href="/signup">crea una cuenta</a>.' : 'To comment, please <a href="login.html">login</a> or <a href="login.html">create an account</a>.';
         const addComment = language === 'es' ? 'Añade un comentario' : 'Add a comment';
         const addCommentButton = language === 'es' ? 'Añadir Comentario' : 'Add Comment';
 
