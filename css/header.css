@@ -7,6 +7,15 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+* {
+    user-select: none;
+}
+
+* img {
+    pointer-events: none;
+
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -137,6 +146,12 @@ header {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+
+}
+
+.desktop-menu a:hover {
+    color: #ff9900; /* Color al que cambia al hacer hover */
 }
 
 .desktop-menu .sign-in {

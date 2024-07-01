@@ -66,7 +66,6 @@ main {
     /* Alto fijo */
     border-radius: 10px;
     margin-bottom: 10px;
-    pointer-events: none;
     /* Evita que se capturen eventos de puntero */
     object-fit: cover;
     /* Ajusta la imagen para cubrir el área sin deformarse */

@@ -22,7 +22,7 @@ function updateContent(language) {
             'dramas': 'Dramas',
             'news': 'News',
             'actors': 'Actors',
-            'reviews': 'Reviews',
+            'support': 'Support',
             'language_option_en': 'English',
             'language_option_es': 'Spanish',
             'drama1': 'A South Korean woman accidentally paraglides into North Korea and falls in love with a North Korean officer.',
@@ -78,7 +78,7 @@ function updateContent(language) {
             'dramas': 'Dramas',
             'news': 'Noticias',
             'actors': 'Actores',
-            'reviews': 'Opiniones',
+            'support': 'Soporte',
             'language_option_en': 'Inglés',
             'language_option_es': 'Español',
             'drama1': 'Una mujer surcoreana se lanza accidentalmente en parapente hacia Corea del Norte y se enamora de un oficial norcoreano.',
@@ -144,7 +144,7 @@ function updateContent(language) {
     document.querySelector('#home-link').textContent = translations[language]['home'];
     document.querySelector('#news-link').textContent = translations[language]['news'];
     document.querySelector('#actors-link').textContent = translations[language]['actors'];
-    document.querySelector('#reviews-link').textContent = translations[language]['reviews'];
+    document.querySelector('#support-link').textContent = translations[language]['support'];
     // Suponiendo que 'language' es la variable que contiene el idioma seleccionado ('en' o 'es')
 
     document.querySelector('#drama1-description').textContent = translations[language]['drama1'];

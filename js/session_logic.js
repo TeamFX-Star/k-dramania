@@ -81,3 +81,23 @@ reload.addEventListener("click", () => {
     location.reload();
 });
 }
+
+    // Función para obtener y mostrar el número de página
+    function obtenerNumeroDePagina() {
+        // Obtener el nombre de la página actual del navegador
+        var paginaActual = window.location.pathname.split('/').pop();
+        
+        // Obtener todos los enlaces del menú
+        var enlaces = document.getElementsByTagName('a');
+        
+        // Recorrer los enlaces y eliminar el enlace que corresponde a la página actual
+        for (var i = 0; i < enlaces.length; i++) {
+            if (enlaces[i].getAttribute('href') === paginaActual) {
+                enlaces[i].parentNode.removeChild(enlaces[i]);
+                break;  // Salir del bucle una vez que se elimine el enlace
+            }
+        }
+    }
+    
+    // Ejecutar la función al cargar la página
+    window.onload = obtenerNumeroDePagina;

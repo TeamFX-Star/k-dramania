@@ -19,7 +19,7 @@ function updateContent(language) {
             'dramas': 'Dramas',
             'news': 'News',
             'actors': 'Actors',
-            'reviews': 'Reviews',
+            'support': 'Support',
             'language-option-en': 'English',
             'language-option-es': 'Spanish',
     
@@ -86,10 +86,10 @@ function updateContent(language) {
             'home': 'Inicio',
             'sign-in-button': 'Iniciar Sesión',
             'sign-up-button': 'Registrarse',
-            'dramas': 'Inicio',
+            'dramas': 'Dramas',
             'news': 'Noticias',
             'actors': 'Actores',
-            'reviews': 'Opiniones',
+            'support': 'Soporte',
             'language-option-en': 'Inglés',
             'language-option-es': 'Español',
             
@@ -177,7 +177,7 @@ function updateContent(language) {
 document.querySelector('#home-link').textContent = translations[language]['home'];
 document.querySelector('#news-link').textContent = translations[language]['news'];
 document.querySelector('#actors-link').textContent = translations[language]['actors'];
-document.querySelector('#reviews-link').textContent = translations[language]['reviews'];
+document.querySelector('#support-link').textContent = translations[language]['support'];
 
 document.querySelector('.post-title-1').textContent = translations[language]['post-title-1'];
 document.querySelector('.post-title-2').textContent = translations[language]['post-title-2'];

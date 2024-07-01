@@ -5,10 +5,6 @@ body {
     background-color: #f8f9fa;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 /* Estilos generales */
 .icon-container, .logo-container {
     display: flex;
@@ -46,6 +42,13 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 20px; /* Espacio inferior entre dramas */
+}
+
+.drama:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
 }
 
 /* Imagen dentro de cada tarjeta de drama */
@@ -118,9 +121,18 @@ body {
 }
 
 .discover .actions .search {
-    background-color: yellow;
+    background-color: #ffcc00;
     color: white;
 }
+
+.discover .search:hover,
+.discover .browse:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

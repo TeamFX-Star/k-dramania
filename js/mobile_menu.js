@@ -1,3 +1,5 @@
+
+
 // Función para alternar la visibilidad del menú lateral
 function toggleMenu() {
     var mobileMenu = document.getElementById("mobileMenu");
@@ -11,7 +13,7 @@ function closeMenu() {
 }
 
 // Evento que escucha el cambio de tamaño de la pantalla
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
     var screenWidth = window.innerWidth;
     var mobileMenu = document.getElementById("mobileMenu");
 
