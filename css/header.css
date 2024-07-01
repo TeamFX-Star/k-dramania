@@ -11,11 +11,6 @@ header {
     user-select: none;
 }
 
-* img {
-    pointer-events: none;
-
-}
-
 ::-webkit-scrollbar {
     display: none;
 }

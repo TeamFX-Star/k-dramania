@@ -101,3 +101,5 @@ reload.addEventListener("click", () => {
     
     // Ejecutar la función al cargar la página
     window.onload = obtenerNumeroDePagina;
+
+    

@@ -6,15 +6,13 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #000000;
-  /* Fondo negro */
-  color: #FFFFFF;
-  /* Texto blanco */
+  background-color: #000000; /* Fondo negro */
+  color: #FFFFFF; /* Texto blanco */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-flex-direction: column;
+  flex-direction: column;
 }
 
 .container {
@@ -28,20 +26,17 @@ flex-direction: column;
   width: 600px;
   margin: 0 auto;
   padding: 50px;
-  background-color: #272639;
-  /* Gris oscuro */
+  background-color: #272639; /* Gris oscuro */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #FFFFFF;
-  /* Texto blanco */
+  color: #FFFFFF; /* Texto blanco */
 }
 
 h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 36px;
-  color: #FFBD59;
-  /* Amarillo */
+  color: #FFBD59; /* Amarillo */
 }
 
 form {
@@ -57,10 +52,8 @@ label {
 
 #login-button, #signup-button {
   padding: 10px;
-  background-color: #FFBD59;
-  /* Amarillo */
-  color: #FFFFFF;
-  /* Texto blanco */
+  background-color: #FFBD59; /* Amarillo */
+  color: #FFFFFF; /* Texto blanco */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -68,31 +61,20 @@ label {
   transition: background-color 0.2s ease-in-out;
 }
 
-#signup-button:hover {
-  background-color: #F6F6F6;
-  /* Blanco */
-  color: #272639;
-  /* Gris oscuro */
-}
-
-#login-button:hover {
-  background-color: #F6F6F6;
-  /* Blanco */
-  color: #272639;
-  /* Gris oscuro */
+#signup-button:hover, #login-button:hover {
+  background-color: #F6F6F6; /* Blanco */
+  color: #272639; /* Gris oscuro */
 }
 
 a {
   text-decoration: none;
-  color: #FFBD59;
-  /* Amarillo */
+  color: #FFBD59; /* Amarillo */
   font-size: 18px;
   transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #F6F6F6;
-  /* Blanco */
+  color: #F6F6F6; /* Blanco */
 }
 
 p {
@@ -141,5 +123,35 @@ p {
   color: dodgerblue;
   &:focus {
     outline: none;
+  }
+}
+
+/* Media queries para hacer el diseño responsivo */
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 100%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .input__item input[type="password"],
+  .input__item input[type="email"],
+  .input__item input[type="text"] {
+    font-size: 16px;
+  }
+
+  #login-button, #signup-button {
+    font-size: 16px;
+    padding: 8px;
   }
 }

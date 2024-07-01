@@ -33,3 +33,12 @@ document.getElementById('open-signup-modal').addEventListener('click', function 
     window.location.href = 'login.html?lang=en'; // Para inglés, por ejemplo
 });
 
+
+function abrirPagina() {
+    // Redirigir a la página deseada
+    window.location.href = 'login.html';
+}
+
+document.getElementById('logoId').addEventListener('click', function () {
+    window.location.href = 'home.html'; // Para español, por ejemplo
+});
